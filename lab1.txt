@@ -1,0 +1,4 @@
+1)mkdir my_new_directory, cat > myfile.txt, mv my_new_directory ~/Music, mv my_new_fi1le ~/Music, cp -r my_new_directory my_new_directory2, cp myfile.txt myfile2.txt, rm -r my_new_directory
+2)/home/ivan
+3) команда cd возвращает тебя в домашнюю директорию
+4)команда less отличается от cat тем, что cat просто выводит содержимое файла. А less позволяет посмотреть файл построчно.
