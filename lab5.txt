@@ -1,0 +1,4 @@
+1) which cat less grep find, whereis cat less grep find
+2) echo $PATH
+3) gcc main.c -o main, ./main, cd .., ./lab4_linux/main
+4) export PATH=$PATH:lab4_linux
