@@ -1,5 +1,5 @@
-1)find . -name "*.txt" -print
+1)find /tmp -name "*.txt"
 2)grep -i "friday" crusoe.txt
-3)echo "Hello world" > myfile.txt, ehco "Hello world" >> myfile.txt
+3)echo "Hello world" > myfile.txt, echo "Hello world" >> myfile.txt
 4)echo *.txt >> myfile.txt
-5)find ./ -printf "%f.txt\n" 
+5)find / -name "*.txt"
