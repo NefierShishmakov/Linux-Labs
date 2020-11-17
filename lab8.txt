@@ -1,0 +1,104 @@
+Чтобы мы могли выполнить скрипт, нужно выполнить команду: chmode ugo+x file
+
+
+
+1)Первый bash script
+
+#!/bin/bash
+count=$1
+index=0
+string="Hello world"
+
+while [[ $index < $count ]]
+do
+echo $string
+let "index=index+1"
+done
+
+
+
+2)Второй bash script
+#!/bin/bash
+
+sum=0
+firstNum=$1
+secondNum=$2
+
+let "sum=sum+firstNum+secondNum"
+
+echo $sum
+
+
+
+3)Третий bash script
+#!/bin/bash
+
+result=0
+firstNum=$1
+secondNum=$2
+operation=$3
+
+case $operation in
+  "add")
+      let "result=firstNum+secondNum"
+      ;;
+  "mul")
+      let "result=firstNum*secondNum"
+      ;;
+  "sub")
+      let "result=firstNum-secondNum"
+      ;;
+  "div")
+      if [[ $secondNum != 0 ]]
+      then
+      let "result=firstNum/secondNum"
+      fi
+      ;;
+    *)
+      echo "Error"
+      ;;
+esac
+
+echo $result#!/bin/bash
+
+
+
+
+4)Четвертый bash script
+#!/bin/bash
+
+result=0
+firstNum=$1
+secondNum=$2
+operation=$3
+
+if [[ $operation = "" ]]
+then
+operation=$AV
+fi
+
+case $operation in
+  "add")
+      let "result=firstNum+secondNum"
+      ;;
+  "mul")
+      let "result=firstNum*secondNum"
+      ;;
+  "sub")
+      let "result=firstNum-secondNum"
+      ;;
+  "div")
+      if [[ $secondNum != 0 ]]
+      then
+      let "result=firstNum/secondNum"
+      fi
+      ;;
+    *)
+      echo "Error"
+      ;;
+esac
+
+echo $result
+
+
+4)
